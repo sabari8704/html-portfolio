@@ -16,10 +16,10 @@
 
  header{
     background-color:var(--dark-primary);
-    padding: 20px;
+    padding: 72px;
     color: #fff;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
  }
  header .logo{
@@ -52,7 +52,7 @@ header ul{list-style: none;
    color: #fff;
    display: flex;
    align-items:center;
-   padding: 20px 120px 0 240px;
+   padding: 20px 100px 20px 220px;
    
  }
 
@@ -60,6 +60,9 @@ header ul{list-style: none;
    font-size: 48px;
    font-weight: bold;
  } 
+ .hero-section__title > span{
+   color: var(--primary);
+ }
 
 
  .hero-section__title{
@@ -126,3 +129,55 @@ color: #fff;
 .hero-buttons button{
    margin-right: 20px;
 }
+/* about me section */
+.about-section{
+   background-color: #22282f;
+   color: #fff;
+   padding:  60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.about-section img{
+   width: 350px;
+   border-radius: 50%;
+   border: 2px solid var(--primary);
+   box-shadow: 5px 5px 20px #03506e;
+  
+}
+
+.about-section--desc{
+  margin-left: 100px;
+  max-width: 450px;
+}
+
+.about-section--desc h4{
+   font-size: 30px;
+   font-weight: 900;
+}
+.about-section--desc h4 > span{
+   color: var(--primary);
+}
+
+.about-section--desc li{
+   list-style: none;
+   margin: 10px 0;
+}
+.about-section--desc li{
+   margin-bottom: 10px;
+   color: gray;
+}
+.about-section--desc li> a{
+   text-decoration: none;
+   color: gray;
+}
+.about-section--desc li > strong{
+   color: #fff;
+}
+.about-section--desc li> a:hover{
+   color: var(--primary);
+}
+
+
+
+  
