@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
+    --primary-hover:#0099ff;
     --primary:#12bdff;
     --dark-primary: #1b1f24;
 }
@@ -28,30 +29,100 @@
 
  }
 
- ul{list-style: none;
+header ul{list-style: none;
 
     display: flex;
  }
- ul li{
-    margin-right: 10px;
+ header ul li{
+    margin-right: 20px;
  }
- ul li a{
+ header ul li a{
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
  }
- ul li a:hover{
+ header li a:hover{
     color: var(--primary);
  }
- header button{
-    padding: 10px 20px;
-    font-weight: bold;
-    background-color: var(--dark-primary);
-    border: 1px solid var(--primary);
-    color: var(--primary);
-    border-radius: 20px;
+
+ /* section:hero homepage */
+ 
+ section.hero-section{
+   background-color: var(--dark-primary);
+   color: #fff;
+   display: flex;
+   align-items:center;
+   padding: 20px 120px 0 240px;
+   
  }
- header button:hover{
-    cursor: pointer;
-    background-color: var(--primary);
-    color:white;
+
+ .hero-section__title{
+   font-size: 48px;
+   font-weight: bold;
+ } 
+
+
+ .hero-section__title{
+   color: azure;
  }
+ .social-icons{
+   margin: 20px 0 ;
+ }
+.social-icons li{
+margin: 10px;
+}
+ul.social-icons{
+   list-style: none;
+   display: flex;
+}
+.social-icons li > a{
+text-decoration: none;
+color: #fff;
+}
+.social-icons li a>i.fa-facebook:hover{
+   color: #1877F2	;
+}
+.social-icons li a>i.fa-linkedin:hover{
+   color: #0077B5	;
+}
+.social-icons li a>i.fa-instagram:hover{
+   color:#405de6;
+}
+.social-icons li a>i.fa-twitter:hover{
+   color:#1DA1F2
+   ;
+}
+/* buttons */
+.btn{
+   padding: 10px 20px;
+   border-radius: 2px;
+   border: none;
+   cursor: pointer;
+}
+
+.btn.btn-primary{
+   background-color: var(--primary);
+   font-weight:700;
+   color: var(--dark-primary);
+
+}
+.btn.btn-primary:hover{
+   background-color: var(--primary-hover);
+}
+
+.btn-dark-outlined{
+   background-color: var(--dark-primary);
+   border: 1px solid var(--primary);
+   color: var(--primary);
+   border-radius: 20px;
+   font-weight: 600;
+}
+.btn-dark-outlined:hover{
+   cursor: pointer;
+   background-color: var(--primary);
+   color:white;
+}
+
+.hero-buttons button{
+   margin-right: 20px;
+}
