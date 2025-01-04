@@ -18,6 +18,8 @@
     background-color:var(--dark-primary);
     padding: 20px;
     color: #fff;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -54,7 +56,7 @@ header ul{list-style: none;
    color: #fff;
    display: flex;
    align-items:center;
-   padding: 20px 100px 20px 220px;
+   padding: 64px 100px 20px 220px;
    
  }
 
@@ -295,6 +297,7 @@ footer a{
    /* about section */
    section.about-section{
       flex-direction: column;
+   
    }
    .about-section--desc{
       margin-left: 0;
